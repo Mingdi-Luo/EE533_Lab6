@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nf:module xmlns:nf="http://www.NetFPGA.org/NF2_register_system" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.NetFPGA.org/NF2_register_system NF2_register_system.xsd ">
+	<nf:name>rv64i_pipeline</nf:name>
+	<nf:prefix>pipe</nf:prefix>
+	<nf:location>udp</nf:location>
+	<nf:description>Registers for RV64I Pipeline Processor debug interface</nf:description>
+	<nf:blocksize>64</nf:blocksize>
+	<nf:registers>
+		<!-- ================================================ -->
+		<!-- SOFTWARE REGISTERS (9 total, address order 0..8)  -->
+		<!-- Matches software_regs concatenation in top:       -->
+		<!--   {dmem_wdata_lower,  (SW8, highest bits)         -->
+		<!--    dmem_wdata_upper,  (SW7)                       -->
+		<!--    dmem_rw_address,   (SW6)                       -->
+		<!--    dmem_write,        (SW5)                       -->
+		<!--    dmem_interact,     (SW4)                       -->
+		<!--    imem_wdata,        (SW3)                       -->
+		<!--    imem_rw_address,   (SW2)                       -->
+		<!--    imem_write,        (SW1)                       -->
+		<!--    imem_interact}     (SW0, lowest bits)          -->
+		<!-- ================================================ -->
+		<nf:register>
+			<nf:name>imem_interact</nf:name>
+			<nf:description>Instruction memory interact mode. Bit 0: 1=freeze CPU and take over imem, 0=normal</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+			<nf:name>imem_write</nf:name>
+			<nf:description>Instruction memory write enable. Bit 0: 1=write, 0=read</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+			<nf:name>imem_rw_address</nf:name>
+			<nf:description>Instruction memory read/write word address (9-bit, bits [8:0])</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+			<nf:name>imem_wdata</nf:name>
+			<nf:description>Instruction memory write data (32-bit instruction)</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+			<nf:name>dmem_interact</nf:name>
+			<nf:description>Data memory interact mode. Bit 0: 1=freeze CPU and take over dmem, 0=normal</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+			<nf:name>dmem_write</nf:name>
+			<nf:description>Data memory write enable. Bit 0: 1=write, 0=read</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+			<nf:name>dmem_rw_address</nf:name>
+			<nf:description>Data memory read/write doubleword address (8-bit, bits [7:0])</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+			<nf:name>dmem_wdata_upper</nf:name>
+			<nf:description>Data memory write data upper 32 bits [63:32]</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+			<nf:name>dmem_wdata_lower</nf:name>
+			<nf:description>Data memory write data lower 32 bits [31:0]</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+
+		<!-- ================================================ -->
+		<!-- HARDWARE REGISTERS (3 total, address order 0..2)  -->
+		<!-- Matches hardware_regs concatenation in top:       -->
+		<!--   {dmem_rdata_lower,  (HW2, highest bits)         -->
+		<!--    dmem_rdata_upper,  (HW1)                       -->
+		<!--    imem_rdata}        (HW0, lowest bits)          -->
+		<!-- ================================================ -->
+		<nf:register>
+			<nf:name>imem_rdata</nf:name>
+			<nf:description>Instruction memory read data (32-bit instruction)</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<nf:register>
+			<nf:name>dmem_rdata_upper</nf:name>
+			<nf:description>Data memory read data upper 32 bits [63:32]</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<nf:register>
+			<nf:name>dmem_rdata_lower</nf:name>
+			<nf:description>Data memory read data lower 32 bits [31:0]</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+	</nf:registers>
+</nf:module>

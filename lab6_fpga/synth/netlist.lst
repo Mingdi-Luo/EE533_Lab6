@@ -1,0 +1,14 @@
+/root/netfpga/projects/lab6/synth/nf2_top.ngc 1771741891
+/root/netfpga/projects/lab6/synth/ins_mem.ngc 1771735909
+/root/netfpga/projects/lab6/synth/data_mem.ngc 1771735909
+/root/netfpga/projects/lab6/synth/srl_cam_unencoded_32x32.ngc 1392408693
+/root/netfpga/projects/lab6/synth/bram_cam_unencoded_32x32.ngc 1392408612
+/root/netfpga/projects/lab6/synth/syncfifo_512x72.ngc 1392409073
+/root/netfpga/projects/lab6/synth/cdq_tx_fifo_256x72_to_36.ngc 1392408366
+/root/netfpga/projects/lab6/synth/cdq_rx_fifo_512x36_to_72.ngc 1392408281
+/root/netfpga/projects/lab6/synth/txfifo_512x72_to_9.ngc 1392408420
+/root/netfpga/projects/lab6/synth/rxfifo_8kx9_to_72.ngc 1392408470
+/root/netfpga/projects/lab6/synth/rxlengthfifo_128x13.ngc 1392408389
+/root/netfpga/projects/lab6/synth/pci2net_16x60.ngc 1392408858
+/root/netfpga/projects/lab6/synth/net2pci_16x32.ngc 1392408827
+OK

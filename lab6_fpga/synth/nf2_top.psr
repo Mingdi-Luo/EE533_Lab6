@@ -1,0 +1,104 @@
+Release 10.1.03 Physical Synthesis Report K.39 (lin64)
+Copyright (c) 1995-2007 Xilinx, Inc. All rights reserved.
+
+TABLE OF CONTENTS
+  1) Physical Synthesis Options Summary
+  2) Optimizations statistics and details
+
+
+=========================================================================
+*                 Physical Synthesis Options Summary                    *
+=========================================================================
+---- Options
+Global Optimization                 : OFF
+    Retiming                        : OFF
+    Equivalent Register Removal     : OFF
+Timing-Driven Packing and Placement : ON
+    Logic Optimization              : OFF
+    Register Duplication            : ON
+
+---- Target Parameters
+Target Device                       : 2vp50ff1152-7
+
+=========================================================================
+
+
+=========================================================================
+*                        Optimizations                                  *
+=========================================================================
+---- Statistics
+   Number of registers added by Replication                  | 63              
+
+   Overall change in number of registers                     | +63              
+
+
+---- Details
+
+New or modified components                             | Optimization             | Objective           
+-------------------------------------------------------|--------------------------|----------------------
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_186| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_187| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_188| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_189| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_190| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_191| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_192| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_193| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_194| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_195| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_196| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_197| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_198| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_199| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_200| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_201| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_202| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_203| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_204| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_205| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jal_memwb_REPLICA_206| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_207| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_208| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_209| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_210| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_211| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_212| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_213| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_214| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_215| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_216| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_217| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_218| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_219| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_220| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_221| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_222| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_223| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_224| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_225| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_226| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/jalr_memwb_REPLICA_227| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_165| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_166| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_167| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_168| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_169| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_170| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_171| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_172| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_173| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_174| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_175| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_176| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_177| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_178| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_179| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_180| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_181| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_182| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_183| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_184| Replication              | Fanout Optimization
+nf2_core/user_data_path/u_pipeline_ip/u_core/mem_to_reg_memwb_REPLICA_185| Replication              | Fanout Optimization
+
+
+
